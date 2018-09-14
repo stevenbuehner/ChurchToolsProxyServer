@@ -1,0 +1,17 @@
+{
+  "name": "stevenbuehner/churchtoolsproxyserver",
+  "description": "ChurchTools Proxy Server",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Steven Buehner",
+      "email": "buehner@me.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "StevenBuehner\\": "phpsrc"
+    }
+  }
+}
