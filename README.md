@@ -4,7 +4,7 @@ Simple proxy server for ChurchTools (church.tools) to forward API requests and a
 ## Setup
 Steps to initialize the project:
 1) Either import via composer: `composer require stevenbuehner/churchtoolsproxyserver`
- or copy the github project and run `composer dump-autload`
+ or copy the github project and run `composer dump-autoload`
 2) Copy proxy.php and configure it with your credentials
 
 For testing use cases you can run your server via:
