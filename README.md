@@ -1,11 +1,25 @@
 # Church Tools Proxy-Server
-Simple Proxy Server für ChurchTools (church.tools) to forward API requests avoiding CORS problems.
+Simple proxy server for ChurchTools (church.tools) to forward API requests and avoiding CORS problems.
 
-Steps to initalized the project:
-1) Import or clone
- import via composer: composer require stevenbuehner/churchtoolsproxyserver
- Or copy the github project and run `composer dump-autload`
+## Setup
+Steps to initialize the project:
+1) Either import via composer: `composer require stevenbuehner/churchtoolsproxyserver`
+ or copy the github project and run `composer dump-autload`
 2) Copy proxy.php and configure it with your credentials
 
-For testing usecases you can run your server via:
+For testing use cases you can run your server via:
 `php -S localhost:8080`
+
+## Usage
+Send a POST-request from any allowed Host (see setup of proxy.php) to your proxy.php.
+
+Required POST Parameters are:
+
+| Parameter-Name | Values | Required | Example |
+|----------------|:------:|----------|---------|
+| m | ChurchTools Module | true| "churchcal/ajax" |
+| f | ChurchTools function found here [here](https://api.churchtools.de/package-CT.API.html) | true | "getMasterData"|
+| data | Additional data to forward to ChurchTools | false | ['category_ids' => [1,2,3]]|
+
+
+# Example-Client
