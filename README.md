@@ -17,9 +17,10 @@ Required POST Parameters are:
 
 | Parameter-Name | Values | Required | Example |
 |----------------|:------:|----------|---------|
-| m | ChurchTools Module | true| "churchcal/ajax" |
-| f | ChurchTools function found here [here](https://api.churchtools.de/package-CT.API.html) | true | "getMasterData"|
+| m | Name of ChurchTools Module | true| "churchcal/ajax" |
+| f | Name of ChurchTools function ([see](https://api.churchtools.de/package-CT.API.html)) | true | "getMasterData"|
 | data | Additional data to forward to ChurchTools | false | ['category_ids' => [1,2,3]]|
 
 
 # Example-Client
+An example VueJs App using this proxy can be found at: https://github.com/stevenbuehner/ChurchToolsVuejsClientExample
